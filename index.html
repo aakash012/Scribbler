@@ -11,6 +11,8 @@
 	<!-- Place all CSS for fonts in this file -->
     <link href='css\font.css' rel='stylesheet' type='text/css'>
 
+    
+
 </head>
 <body>
     <div id="main-container-div">
@@ -33,7 +35,7 @@
 
     <div id="signInModal" class="modal">
     	<!-- Insert code for Sign In modal here -->
-        <form class="modal-content" action="/action_page.php">
+        <form class="modal-content" action="#">
             <span onclick="onCloseModalClicked()" class="close_signIn" title="Close Modal">&times;</span>
             <div class="container">
             <h1>Welcome Back!</h1>
@@ -61,7 +63,7 @@
     <div id="signUpModal" class="modal">
         <div class="modal-content-sigup">
             <span onclick="onCloseModalClicked()" class="close_signIn" title="Close Modal">&times;</span>
-            <form class="modal-content-sigUp" action="/action_page.php">
+            <form class="modal-content-sigUp" action="#">
                 <div class="container-signUp">
 
                     <h1>Get Started</h1>
@@ -88,7 +90,7 @@
         <div class="newPost-Content">
             <span onclick="ClosePost()" class="close_newPost">&times;</span>
             <h1 id="formHeader">Create Your Post</h1>
-            <form id="newPostForm" action="/action_page.php">
+            <form id="newPostForm" action="#">
                 <label for="newPostTitle">Title: </label>
                 <br />
                 <input id="newPostTitle" type="text" name="Title" class="post-title">
@@ -96,7 +98,7 @@
                 <br/>
                 <label for="postContent">Content: </label>
                 <textarea id="postContent" rows="27" cols="20" name="Content"></textarea>
-                <input id="newPostSubmit" type="submit" value="Create" align="right">
+                <input id="newPostSubmit" type="submit" value="Create" onclick="notify()" align="right">
             </form>
         </div>
     </div>
@@ -105,6 +107,7 @@
 	<script src="js\header.js"></script>
 	<!-- Place all Javascript for rest of the elements in this file -->
     <script src="js\index.js"></script>
+    
 
 </body>
 </html>

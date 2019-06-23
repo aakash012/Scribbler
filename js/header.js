@@ -4,6 +4,7 @@ function SignIn() {
     
 function SignUp() {
     document.getElementById('signUpModal').style.display='block';
+    
 }
 
 function onCloseModalClicked() {
@@ -14,4 +15,3 @@ function onCloseModalClicked() {
 function openSignUpButton(){
     document.getElementById('signUpModal').style.display='block';
 }
-    

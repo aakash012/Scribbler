@@ -30,9 +30,6 @@ function postLiked(){
         }
     }
 }
-
-
-
 function addComment() {
     var comment= document.getElementById('commentContent').value;
 

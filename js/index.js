@@ -9,3 +9,7 @@ function newPosts() {
 function ClosePost() {
     document.getElementById('newPostModal').style.display='none';
 }
+function notify()
+{
+  alert("Successful!!!");
+}

@@ -10,7 +10,11 @@ function onDeletePost(){
 function onCloseDeleteClicked() {
   document.getElementById('deletePostPrompt').style.display='none';
 }
-
+function notify()
+{
+  alert("Successful!!!");
+  document.getElementById('deletePostPrompt').style.display='none';
+}
 var myPost;
 
 myPost = [

@@ -58,7 +58,20 @@ padding: 10px 10px 10px 10px;
    transition: 0.5s;
    display: none;
    background-color: rgba(0,0,0,0.7);
+   -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
 }
+    @-webkit-keyframes animatetop {
+        from {top:-300px; opacity:0} 
+        to {top:0; opacity:1}
+      }
+      
+      @keyframes animatetop {
+        from {top:-300px; opacity:0}
+        to {top:0; opacity:1}
+      }
 
 .newPost-Content {
    position: relative; 

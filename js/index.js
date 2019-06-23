@@ -1,15 +1,15 @@
 function allPosts() {
-    window.location.href= "./html/bloglist.html";
+    window.location.href = "./html/bloglist.html";
 }
 
 function newPosts() {
-    document.getElementById('newPostModal').style.display='block';
+    document.getElementById('newPostModal').style.display = 'block';
 }
 
 function ClosePost() {
-    document.getElementById('newPostModal').style.display='none';
+    document.getElementById('newPostModal').style.display = 'none';
 }
-function notify()
-{
-  alert("Successful!!!");
+
+function notify() {
+    alert("Successful!!!");
 }

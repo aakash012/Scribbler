@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
     <!-- Place all CSS for header in this file -->
@@ -8,25 +9,23 @@
     <!-- Place all CSS for the rest of the elements in this file -->
     <link href='css\index.css' rel='stylesheet' type='text/css'>
 
-	<!-- Place all CSS for fonts in this file -->
+    <!-- Place all CSS for fonts in this file -->
     <link href='css\font.css' rel='stylesheet' type='text/css'>
-
-    
-
 </head>
+
 <body>
     <div id="main-container-div">
 
         <div class="header">
-        	<!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
+            <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
             <input type="button" value="Sign Up" onclick="SignUp()" id="signUp" class="signButton">
             <input type="button" value="Sign In" onclick="SignIn()" id="signIn" class="signButton">
             <a class="logo-title" id="pageTitle">ScriBBler</a>
             <p class="logo-text">Explore, Imagine, Create</p>
         </div>
-           
+
         <div class="postButtons">
-        	<!-- Insert code for All Posts & Create Post button here -->
+            <!-- Insert code for All Posts & Create Post button here -->
             <input type="button" id="allPosts" class="postButton-1" onclick="allPosts()" value="All Posts">
             <input type="button" id="newPosts" class="postButton-1" onclick="newPosts()" value="Create Post">
 
@@ -34,30 +33,30 @@
     </div>
 
     <div id="signInModal" class="modal">
-    	<!-- Insert code for Sign In modal here -->
+        <!-- Insert code for Sign In modal here -->
         <form class="modal-content" action="#">
             <span onclick="onCloseModalClicked()" class="close_signIn" title="Close Modal">&times;</span>
             <div class="container">
-            <h1>Welcome Back!</h1>
-            <hr>
-            <label for="Username" class="label">
-                <b>Username</b>
-            </label>
-            <input type="text" placeholder="Enter Username" name="Username" required>
+                <h1>Welcome Back!</h1>
+                <hr>
+                <label for="Username" class="label">
+                    <b>Username</b>
+                </label>
+                <input type="text" placeholder="Enter Username" name="Username" required>
 
-            <label for="psw" class="label">
-                <b>Password</b>
-            </label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-            <div class="clearfix" class="label">
-                
-                <button type="submit" class="signinbtn">Sign In</button>
+                <label for="psw" class="label">
+                    <b>Password</b>
+                </label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <div class="clearfix" class="label">
+
+                    <button type="submit" class="signinbtn">Sign In</button>
+                </div>
             </div>
-        </div>
-        <div id="signUpPrompt" class="signUpForm">Not a member?
-            <span id="" class="signUp" onclick="SignUp()">Sign Up</span>
-        </div>
-    </form>
+            <div id="signUpPrompt" class="signUpForm">Not a member?
+                <span id="" class="signUp" onclick="SignUp()">Sign Up</span>
+            </div>
+        </form>
     </div>
 
     <div id="signUpModal" class="modal">
@@ -77,9 +76,9 @@
                     <label for="pswrepeat" class="label">Confirm Password</label>
                     <input type="password" placeholder="Confirm Password" name="pswrepeat" required>
                     <div class="clearfix">
-                            <button type="submit" class="signupbtn">Sign Up</button>
+                        <button type="submit" class="signupbtn">Sign Up</button>
                         <button type="button" class="cancelbtn">Clear</button>
-                        
+
                     </div>
                 </div>
             </form>
@@ -95,7 +94,7 @@
                 <br />
                 <input id="newPostTitle" type="text" name="Title" class="post-title">
                 <br />
-                <br/>
+                <br />
                 <label for="postContent">Content: </label>
                 <textarea id="postContent" rows="27" cols="20" name="Content"></textarea>
                 <input id="newPostSubmit" type="submit" value="Create" onclick="notify()" align="right">
@@ -103,11 +102,12 @@
         </div>
     </div>
 
-	<!-- Place all Javascript for header in this file -->
-	<script src="js\header.js"></script>
-	<!-- Place all Javascript for rest of the elements in this file -->
+    <!-- Place all Javascript for header in this file -->
+    <script src="js\header.js"></script>
+    <!-- Place all Javascript for rest of the elements in this file -->
     <script src="js\index.js"></script>
-    
+
 
 </body>
+
 </html>
